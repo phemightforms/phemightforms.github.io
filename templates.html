@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Templates | PhemightForms</title>
+<meta name="description" content="Browse 60 plus ready made PhemightForms templates with live mini previews, just like inside the plugin.">
+<link rel="canonical" href="https://phemightforms.github.io/templates.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PhemightForms">
+<meta property="og:title" content="Form Templates | PhemightForms">
+<meta property="og:description" content="Browse 60 plus ready made PhemightForms templates with live mini previews, just like inside the plugin.">
+<meta property="og:url" content="https://phemightforms.github.io/templates.html">
+<meta property="og:image" content="https://phemightforms.github.io/assets/img/screenshots/builder.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Form Templates | PhemightForms">
+<meta name="twitter:description" content="Browse 60 plus ready made PhemightForms templates with live mini previews, just like inside the plugin.">
+<meta name="twitter:image" content="https://phemightforms.github.io/assets/img/screenshots/builder.png">
+<meta name="theme-color" content="#b56d18">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="templates">
+
+<header class="site-header" id="app-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker">Templates</span>
+      <h1>Ready Made Forms With <span class="hl">Plugin Style Previews</span></h1>
+      <p>Every card shows a miniature form header preview, the same idea you see inside PhemightForms. Pick a template, customize it, and publish.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold btn-lg" href="download.html"><svg class="icon"><use href="#i-download"></use></svg> Get Templates Free</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tpl-search-wrap reveal">
+        <svg class="icon"><use href="#i-search"></use></svg>
+        <input type="search" id="tplSearch" placeholder="Search templates..." aria-label="Search templates">
+      </div>
+      <div class="tpl-filter reveal" id="tplFilter"></div>
+      <div class="tpl-grid plugin-style" id="tplGrid"></div>
+      <p id="tplEmpty" style="display:none; text-align:center; margin-top:30px; color:var(--muted); font-weight:600;">No templates match that search.</p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Use These Templates Inside WordPress</h2>
+        <p>Download PhemightForms and open the template gallery in your dashboard. One click starts a full editable form.</p>
+        <div class="cta-actions">
+          <a class="btn btn-gold btn-lg" href="download.html"><svg class="icon"><use href="#i-download"></use></svg> Download Free</a>
+          <a class="btn btn-white btn-lg" href="docs.html#templates">Read Template Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="app-footer"></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/templates-data.js"></script>
+<script>
+(function () {
+  var CAT_LABELS = {
+    all: "All",
+    business: "Business",
+    customer: "Customer Service",
+    education: "Education",
+    entertainment: "Entertainment",
+    events: "Events",
+    feedback: "Feedback",
+    health: "Health",
+    marketing: "Marketing",
+    nonprofit: "Nonprofit",
+    payment: "Payments",
+    quizzes: "Quizzes",
+    registration: "Registration"
+  };
+
+  function esc(s) {
+    return String(s || "").replace(/[&<>"']/g, function (c) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+    });
+  }
+
+  function previewHtml(fields, isBlank) {
+    if (isBlank || !fields || !fields.length) {
+      return '<div class="phf-mini-blank">+</div>';
+    }
+    var out = '<div class="phf-mini-form">';
+    var shown = 0;
+    fields.forEach(function (field) {
+      if (shown >= 4) return;
+      var type = field.type || "text";
+      var label = field.label || "";
+      if (["section", "pagebreak", "html", "hidden"].indexOf(type) !== -1) return;
+      out += '<div class="phf-mini-field">';
+      if (label) out += '<span class="phf-mini-label">' + esc(label) + "</span>";
+      if (type === "name" || type === "address") {
+        out += '<span class="phf-mini-row"><span class="phf-mini-input"></span><span class="phf-mini-input"></span></span>';
+      } else if (type === "textarea") {
+        out += '<span class="phf-mini-input phf-mini-area"></span>';
+      } else if (type === "radio" || type === "checkbox" || type === "image_choice" || type === "payment_multiple") {
+        var dot = type === "checkbox" ? "phf-mini-square" : "phf-mini-dot";
+        out += '<span class="phf-mini-choices">';
+        out += '<span class="phf-mini-choice"><span class="' + dot + '"></span><span class="phf-mini-bar"></span></span>';
+        out += '<span class="phf-mini-choice"><span class="' + dot + '"></span><span class="phf-mini-bar"></span></span>';
+        out += "</span>";
+      } else if (type === "select" || type === "country" || type === "payment_select") {
+        out += '<span class="phf-mini-input phf-mini-select"><span class="phf-mini-caret"></span></span>';
+      } else if (type === "consent") {
+        out += '<span class="phf-mini-choice"><span class="phf-mini-square"></span><span class="phf-mini-bar phf-mini-bar-long"></span></span>';
+      } else if (type === "rating") {
+        out += '<span class="phf-mini-stars">â˜…â˜…â˜…â˜…â˜…</span>';
+      } else if (type === "signature") {
+        out += '<span class="phf-mini-input phf-mini-area phf-mini-sig">âœŽ</span>';
+      } else if (type === "payment_single" || type === "payment_total") {
+        out += '<span class="phf-mini-price">$</span>';
+      } else if (type === "payment_coupon") {
+        out += '<span class="phf-mini-row"><span class="phf-mini-input"></span><span class="phf-mini-btn phf-mini-btn-sm"></span></span>';
+      } else {
+        out += '<span class="phf-mini-input"></span>';
+      }
+      out += "</div>";
+      shown++;
+    });
+    out += '<span class="phf-mini-btn"></span></div>';
+    return out;
+  }
+
+  var grid = document.getElementById("tplGrid");
+  var filter = document.getElementById("tplFilter");
+  var search = document.getElementById("tplSearch");
+  var empty = document.getElementById("tplEmpty");
+  var templates = Array.isArray(window.PHEMIGHT_TEMPLATES) ? window.PHEMIGHT_TEMPLATES : [];
+  var activeCat = "all";
+
+  function renderFilters(list) {
+    var cats = {};
+    list.forEach(function (t) { cats[t.category] = (cats[t.category] || 0) + 1; });
+    var html = '<button class="tab-btn active" data-cat="all">All <span style="opacity:.65">(' + list.length + ")</span></button>";
+    Object.keys(CAT_LABELS).forEach(function (key) {
+      if (key === "all" || !cats[key]) return;
+      html += '<button class="tab-btn" data-cat="' + key + '" id="cat-' + key + '">' + CAT_LABELS[key] + ' <span style="opacity:.65">(' + cats[key] + ")</span></button>";
+    });
+    filter.innerHTML = html;
+    Array.prototype.forEach.call(filter.querySelectorAll("[data-cat]"), function (btn) {
+      btn.addEventListener("click", function () {
+        activeCat = btn.getAttribute("data-cat");
+        Array.prototype.forEach.call(filter.querySelectorAll(".tab-btn"), function (b) {
+          b.classList.toggle("active", b === btn);
+        });
+        renderGrid();
+      });
+    });
+  }
+
+  function renderGrid() {
+    var q = (search.value || "").trim().toLowerCase();
+    var html = "";
+    var count = 0;
+    templates.forEach(function (t) {
+      if (activeCat !== "all" && t.category !== activeCat) return;
+      if (q && (t.name + " " + t.description + " " + t.category).toLowerCase().indexOf(q) === -1) return;
+      count++;
+      var isBlank = t.slug === "blank";
+      html +=
+        '<article class="tpl-card plugin' + (isBlank ? " blank-card" : "") + ' reveal shown" data-cat="' + esc(t.category) + '" id="tpl-' + esc(t.slug) + '">' +
+        '<div class="tpl-preview"><span class="tpl-tag">' + esc(CAT_LABELS[t.category] || t.category) + "</span>" +
+        previewHtml(t.fields, isBlank) +
+        "</div>" +
+        '<div class="tpl-body"><h3>' + esc(t.name) + "</h3><p>" + esc(t.description) + "</p></div>" +
+        '<a class="btn btn-outline" href="download.html">Use Template</a>' +
+        "</article>";
+    });
+    grid.innerHTML = html;
+    empty.style.display = count ? "none" : "block";
+  }
+
+  if (!templates.length) {
+    grid.innerHTML = "<p style='text-align:center;color:var(--muted)'>Could not load templates.</p>";
+    return;
+  }
+
+  var hash = (location.hash || "").replace("#", "");
+  if (hash && CAT_LABELS[hash]) activeCat = hash;
+  renderFilters(templates);
+  if (activeCat !== "all") {
+    Array.prototype.forEach.call(filter.querySelectorAll(".tab-btn"), function (b) {
+      b.classList.toggle("active", b.getAttribute("data-cat") === activeCat);
+    });
+  }
+  renderGrid();
+  search.addEventListener("input", renderGrid);
+})();
+</script>
+</body>
+</html>

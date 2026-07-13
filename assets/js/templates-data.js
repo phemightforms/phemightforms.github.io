@@ -1,0 +1,1497 @@
+window.PHEMIGHT_TEMPLATES = [
+  {
+    "slug": "blank",
+    "name": "Blank Form",
+    "description": "Start from scratch and build any type of form with the drag & drop builder.",
+    "category": "business",
+    "fields": []
+  },
+  {
+    "slug": "contact",
+    "name": "Simple Contact Form",
+    "description": "Collect names, emails, and messages from visitors who need to talk to you.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "demo-request",
+    "name": "Demo Request Form",
+    "description": "Allow website visitors to request a product demo straight from your site.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "What would you like to see?"
+      }
+    ]
+  },
+  {
+    "slug": "job-application",
+    "name": "Job Application Form",
+    "description": "Collect applications with a resume upload and screening questions.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Cover Letter"
+      }
+    ]
+  },
+  {
+    "slug": "quote-request",
+    "name": "Request a Quote Form",
+    "description": "Let prospects describe their project and request pricing.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Project Details"
+      }
+    ]
+  },
+  {
+    "slug": "appointment",
+    "name": "Appointment Booking Form",
+    "description": "Let clients pick a date and time that works for them.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Notes"
+      }
+    ]
+  },
+  {
+    "slug": "vehicle-info",
+    "name": "Automobile Information Form",
+    "description": "Gather vehicle details for insurance, repairs, or services.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the issue or request"
+      }
+    ]
+  },
+  {
+    "slug": "eviction-notice",
+    "name": "Eviction Notice Form",
+    "description": "Create a notification of eviction for both landlord and tenant.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Reason for Notice"
+      },
+      {
+        "type": "textarea",
+        "label": "Special Instructions"
+      }
+    ]
+  },
+  {
+    "slug": "packing-list",
+    "name": "Packing List Form",
+    "description": "Track shipments and packed items directly from your website.",
+    "category": "business",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Special Instructions"
+      }
+    ]
+  },
+  {
+    "slug": "support-ticket",
+    "name": "Support Ticket Form",
+    "description": "Collect support requests with priority and details.",
+    "category": "customer",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the problem"
+      }
+    ]
+  },
+  {
+    "slug": "feature-request",
+    "name": "Feature Request Form",
+    "description": "Let your users easily submit feature requests for your products.",
+    "category": "customer",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the feature and why it helps"
+      }
+    ]
+  },
+  {
+    "slug": "complaint",
+    "name": "Customer Complaint Form",
+    "description": "Give customers a clear channel to report problems so you can fix them.",
+    "category": "customer",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe your complaint"
+      }
+    ]
+  },
+  {
+    "slug": "cancellation",
+    "name": "Cancellation Request Form",
+    "description": "Process cancellations gracefully and learn why customers leave.",
+    "category": "customer",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Anything we could have done better?"
+      }
+    ]
+  },
+  {
+    "slug": "terms-contact",
+    "name": "Terms of Service Contact Form",
+    "description": "Ask your visitor to agree to your terms when they submit your contact form.",
+    "category": "customer",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "course-registration",
+    "name": "Course Registration Form",
+    "description": "Enrol students in classes with schedule preferences.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Objectives"
+      }
+    ]
+  },
+  {
+    "slug": "lesson-plan",
+    "name": "Lesson Plan Form",
+    "description": "Collect course objectives, goals, and materials to help deliver lessons.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Objectives"
+      },
+      {
+        "type": "textarea",
+        "label": "Materials Needed"
+      }
+    ]
+  },
+  {
+    "slug": "lecture-notes",
+    "name": "Lecture Notes Form",
+    "description": "Keep all your notes in one convenient place for efficient teaching.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Key Points"
+      },
+      {
+        "type": "textarea",
+        "label": "Questions to Follow Up"
+      }
+    ]
+  },
+  {
+    "slug": "grade-book",
+    "name": "Grade Book Form",
+    "description": "Collect student information and assignments in one location.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Comments"
+      },
+      {
+        "type": "textarea",
+        "label": "What would you like to discuss?"
+      }
+    ]
+  },
+  {
+    "slug": "library-request",
+    "name": "Library Book Request Form",
+    "description": "Let patrons request books for your library.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "What would you like to discuss?"
+      },
+      {
+        "type": "textarea",
+        "label": "Cues / Questions"
+      }
+    ]
+  },
+  {
+    "slug": "advisor-meeting",
+    "name": "Academic Advisor Meeting Form",
+    "description": "Let students book meetings with their academic advisors.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "textarea",
+        "label": "What would you like to discuss?"
+      },
+      {
+        "type": "textarea",
+        "label": "Cues / Questions"
+      }
+    ]
+  },
+  {
+    "slug": "cornell-notes",
+    "name": "Cornell Notes Form",
+    "description": "Implement the Cornell note taking system on your website.",
+    "category": "education",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Cues / Questions"
+      },
+      {
+        "type": "textarea",
+        "label": "Notes"
+      }
+    ]
+  },
+  {
+    "slug": "dj-request",
+    "name": "DJ Song Request Form",
+    "description": "Let guests request a specific song from the DJ for a more interactive event.",
+    "category": "entertainment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Gift ideas / wishlist"
+      },
+      {
+        "type": "textarea",
+        "label": "Why should you be considered?"
+      }
+    ]
+  },
+  {
+    "slug": "secret-santa",
+    "name": "Secret Santa Signup Form",
+    "description": "Get signups for your Secret Santa gift exchange.",
+    "category": "entertainment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Gift ideas / wishlist"
+      },
+      {
+        "type": "textarea",
+        "label": "Why should you be considered?"
+      }
+    ]
+  },
+  {
+    "slug": "refer-friend",
+    "name": "Refer a Friend and Win Form",
+    "description": "Encourage people to recommend friends in exchange for prizes.",
+    "category": "entertainment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Why should you be considered?"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the offence"
+      }
+    ]
+  },
+  {
+    "slug": "significant-other",
+    "name": "Significant Other Application Form",
+    "description": "A lighthearted application to screen potential partners.",
+    "category": "entertainment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Why should you be considered?"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the offence"
+      }
+    ]
+  },
+  {
+    "slug": "complaint-fun",
+    "name": "Significant Other Complaint Form",
+    "description": "A cheeky, fun form to air lighthearted grievances.",
+    "category": "entertainment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the offence"
+      },
+      {
+        "type": "text",
+        "label": "Complainant Name"
+      }
+    ]
+  },
+  {
+    "slug": "rsvp",
+    "name": "Party Invitation RSVP Form",
+    "description": "Easily share party information and give guests the chance to RSVP.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "radio",
+        "label": "Will you attend?"
+      },
+      {
+        "type": "number",
+        "label": "Number of Guests"
+      }
+    ]
+  },
+  {
+    "slug": "birthday-rsvp",
+    "name": "Birthday Party RSVP Form",
+    "description": "Find out who is coming to your party and answer questions about the big day.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "radio",
+        "label": "Attending?"
+      },
+      {
+        "type": "number",
+        "label": "How many in your party?"
+      }
+    ]
+  },
+  {
+    "slug": "potluck",
+    "name": "Potluck Invitation RSVP Form",
+    "description": "Find out who will attend your party and what they plan to bring.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "radio",
+        "label": "Will you attend?"
+      },
+      {
+        "type": "select",
+        "label": "What will you bring?"
+      }
+    ]
+  },
+  {
+    "slug": "meeting-room",
+    "name": "Meeting Room Registration Form",
+    "description": "Simplify the process of reserving meeting rooms.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "select",
+        "label": "Room"
+      },
+      {
+        "type": "date",
+        "label": "Date"
+      }
+    ]
+  },
+  {
+    "slug": "wedding-rsvp",
+    "name": "Wedding RSVP Form",
+    "description": "Collect wedding attendance, meal choices, and song requests.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Your feedback"
+      },
+      {
+        "type": "radio",
+        "label": "Will you celebrate with us?"
+      }
+    ]
+  },
+  {
+    "slug": "new-years-rsvp",
+    "name": "New Years Party RSVP Form",
+    "description": "Share event information and find out who wants to come and who they will bring.",
+    "category": "events",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Your feedback"
+      },
+      {
+        "type": "textarea",
+        "label": "Any other comments?"
+      }
+    ]
+  },
+  {
+    "slug": "feedback",
+    "name": "Feedback / Suggestion Form",
+    "description": "Collect ratings and open feedback from visitors.",
+    "category": "feedback",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Your feedback"
+      },
+      {
+        "type": "textarea",
+        "label": "Any other comments?"
+      },
+      {
+        "type": "textarea",
+        "label": "What is the main reason for your score?"
+      }
+    ]
+  },
+  {
+    "slug": "survey",
+    "name": "Customer Survey Form",
+    "description": "Multiple choice questions with aggregated results reporting.",
+    "category": "feedback",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Any other comments?"
+      }
+    ]
+  },
+  {
+    "slug": "nps",
+    "name": "NPS Survey Form",
+    "description": "Measure loyalty with the classic \"how likely are you to recommend us\" survey.",
+    "category": "feedback",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "What is the main reason for your score?"
+      }
+    ]
+  },
+  {
+    "slug": "website-feedback",
+    "name": "Website Feedback Form",
+    "description": "Find out what visitors think about your website and what to improve.",
+    "category": "feedback",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "What can we improve?"
+      }
+    ]
+  },
+  {
+    "slug": "facial-consult",
+    "name": "Facial Consultation Form",
+    "description": "Prepare for a facial consultation with your clients, directly from your website.",
+    "category": "health",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Current skincare routine"
+      }
+    ]
+  },
+  {
+    "slug": "hair-consult",
+    "name": "Hair Extension Consultation Form",
+    "description": "Gather information from clients to prepare for a consultation.",
+    "category": "health",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Current medications"
+      }
+    ]
+  },
+  {
+    "slug": "patient-intake",
+    "name": "Patient Intake Form",
+    "description": "Collect new patient details and medical history before the first visit.",
+    "category": "health",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Current medications"
+      }
+    ]
+  },
+  {
+    "slug": "class-booking",
+    "name": "Fitness Class Booking Form",
+    "description": "Let members book yoga, spin, or gym classes online.",
+    "category": "health",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      },
+      {
+        "type": "select",
+        "label": "Class"
+      }
+    ]
+  },
+  {
+    "slug": "newsletter",
+    "name": "Newsletter Signup Form",
+    "description": "Collect email addresses and add visitors to your newsletter.",
+    "category": "marketing",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      },
+      {
+        "type": "consent",
+        "label": "Consent"
+      }
+    ]
+  },
+  {
+    "slug": "lead-magnet",
+    "name": "Lead Magnet Download Form",
+    "description": "Offer an instant download when your visitor submits this form.",
+    "category": "marketing",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "gdpr-contact",
+    "name": "GDPR Contact Form",
+    "description": "Publish a contact form with a GDPR checkbox to stay compliant.",
+    "category": "marketing",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "optin",
+    "name": "Opt In Form",
+    "description": "Ask visitors for their email address and convert them into loyal subscribers.",
+    "category": "marketing",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "country-contact",
+    "name": "Country Dropdown Contact Form",
+    "description": "Contact form with a country dropdown so visitors can pick their location.",
+    "category": "marketing",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Message"
+      }
+    ]
+  },
+  {
+    "slug": "volunteer",
+    "name": "Volunteer Application Form",
+    "description": "Recruit volunteers with availability and skills information.",
+    "category": "nonprofit",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Why do you want to volunteer?"
+      }
+    ]
+  },
+  {
+    "slug": "community-service",
+    "name": "Community Service Form",
+    "description": "Track volunteers' service requirement activities.",
+    "category": "nonprofit",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Describe the activity"
+      }
+    ]
+  },
+  {
+    "slug": "stall-application",
+    "name": "Stall Holder Application Form",
+    "description": "Allow local businesses to apply to run a stall at your event.",
+    "category": "nonprofit",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "What will you be selling?"
+      }
+    ]
+  },
+  {
+    "slug": "order-form",
+    "name": "Customer Order Form",
+    "description": "Collect customer info, product choices, and payment to process orders quickly.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Leave a message of support"
+      }
+    ]
+  },
+  {
+    "slug": "stripe-payment",
+    "name": "Product Payment Form",
+    "description": "Let your visitor pick an item and instantly pay for it online.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Leave a message of support"
+      },
+      {
+        "type": "payment_select",
+        "label": "Select a product"
+      }
+    ]
+  },
+  {
+    "slug": "donation",
+    "name": "Variable Donation Form",
+    "description": "Let your donor choose their own donation amount and pay online.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "textarea",
+        "label": "Leave a message of support"
+      },
+      {
+        "type": "payment_single",
+        "label": "Donation Amount"
+      }
+    ]
+  },
+  {
+    "slug": "buy-coffee",
+    "name": "Buy Me a Coffee Form",
+    "description": "Ask visitors to buy you a coffee with a customizable amount.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "text",
+        "label": "Your Name"
+      },
+      {
+        "type": "payment_multiple",
+        "label": "Coffee size"
+      }
+    ]
+  },
+  {
+    "slug": "lemonade-order",
+    "name": "Lemonade Stand Order Form",
+    "description": "Let people order ahead so they can pick up their lemonade.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "payment_multiple",
+        "label": "Drink"
+      },
+      {
+        "type": "payment_quantity",
+        "label": "How many?"
+      }
+    ]
+  },
+  {
+    "slug": "event-ticket",
+    "name": "Event Ticket Payment Form",
+    "description": "Sell event tickets with tiered pricing and coupons.",
+    "category": "payment",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "payment_multiple",
+        "label": "Ticket Type"
+      },
+      {
+        "type": "payment_quantity",
+        "label": "Number of tickets"
+      }
+    ]
+  },
+  {
+    "slug": "quiz",
+    "name": "General Knowledge Quiz",
+    "description": "Graded quiz with correct answers and a score on submission.",
+    "category": "quizzes",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "radio",
+        "label": "What is 2 + 2?"
+      },
+      {
+        "type": "radio",
+        "label": "Capital of France?"
+      },
+      {
+        "type": "radio",
+        "label": "Largest planet?"
+      }
+    ]
+  },
+  {
+    "slug": "math-quiz",
+    "name": "Math Quiz",
+    "description": "A quick arithmetic test with automatic scoring.",
+    "category": "quizzes",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "radio",
+        "label": "12 \u00d7 8 = ?"
+      }
+    ]
+  },
+  {
+    "slug": "personality-quiz",
+    "name": "Personality Quiz",
+    "description": "A fun, ungraded quiz to engage your audience.",
+    "category": "quizzes",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "radio",
+        "label": "Your ideal weekend?"
+      }
+    ]
+  },
+  {
+    "slug": "registration",
+    "name": "Event Registration Form",
+    "description": "Register attendees with contact and preference fields.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Allergies or medical conditions"
+      }
+    ]
+  },
+  {
+    "slug": "conference",
+    "name": "Conference Registration Form",
+    "description": "Collect attendee information to plan and manage your next conference.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Allergies or medical conditions"
+      }
+    ]
+  },
+  {
+    "slug": "camp-registration",
+    "name": "Camp Registration Form",
+    "description": "Register participants for camp with guardian and medical details.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "textarea",
+        "label": "Allergies or medical conditions"
+      }
+    ]
+  },
+  {
+    "slug": "sports-tryout",
+    "name": "Sports Tryout Registration Form",
+    "description": "Streamline tryout signups for basketball, football, volleyball, and more.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "phone",
+        "label": "Phone"
+      },
+      {
+        "type": "select",
+        "label": "Sport"
+      }
+    ]
+  },
+  {
+    "slug": "intramural",
+    "name": "Intramural Sports Registration Form",
+    "description": "Have intramural players register and pay directly on the form.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "select",
+        "label": "League"
+      },
+      {
+        "type": "text",
+        "label": "Team Name"
+      }
+    ]
+  },
+  {
+    "slug": "user-registration",
+    "name": "User Registration Form",
+    "description": "Collect new member signups with account preferences.",
+    "category": "registration",
+    "fields": [
+      {
+        "type": "name",
+        "label": "Name"
+      },
+      {
+        "type": "email",
+        "label": "Email"
+      },
+      {
+        "type": "text",
+        "label": "Preferred Username"
+      },
+      {
+        "type": "country",
+        "label": "Country"
+      }
+    ]
+  }
+];
