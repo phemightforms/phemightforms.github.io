@@ -190,7 +190,7 @@
     '<div class="footer-mega">' +
     '<div class="footer-brand">' +
     '<a class="brand" href="index.html" aria-label="PhemightForms Home"><img src="assets/img/logo.png" width="64" height="64" alt="PhemightForms"></a>' +
-    "<p>PhemightForms is the friendly WordPress form builder. Create beautiful forms, collect entries, accept payments, and grow with confidence.</p>" +
+    "<p>PhemightForms (Phemight Forms) is the friendly WordPress form builder. Create beautiful forms, collect entries, accept payments, and grow with confidence.</p>" +
     "</div>" +
     '<div class="footer-col"><h4>Company</h4>' +
     '<a href="careers.html">Careers</a>' +
